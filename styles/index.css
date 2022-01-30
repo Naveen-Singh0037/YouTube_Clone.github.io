@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* header section*/
+.header {
+  
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    
+    position: fixed;
+    background: white;
+    
+  }
+  .headeer {
+    margin-top: 58px;
+    width: 100vw;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    height: 56px;
+    padding: 15px;
+    background: white;
+    position: fixed;
+    
+      
+    }
+    .BUT{
+      margin-left: 200px;
+    overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-start ;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  
+    button{
+      cursor: pointer;
+      display: inline-flex;
+      flex-direction: row;
+
+      margin: 0px 12px 0px 12px;
+      padding: 5px;
+      border-radius:10px;
+    }
+  main {
+    height: calc(100vh - 70px);
+    display: flex;
+    background-color: #f9f9f9;
+  }
+  /* Sidebar */ 
+.side-bar {
+  margin-top: 49;
+    width: 230px;
+    height: 100%;
+    background-color: white;
+    position:fixed;
+    /* overflow-y: hidden; */
+  } 
+ 
+  .logo {
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0 7px;
+    cursor: pointer;
+
+   }
+   
+   .logoo {
+    display:inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    padding: 0 7px;
+    cursor: pointer;
+
+   }
+   /* .left  {
+    padding: 0 7px;
+    cursor: pointer;
+   } */
+   .search {
+    display: flex;
+   }
+   
+   .search form {
+    display: flex;
+    border: 1px solid #ddd;
+    height: 45px;
+   }
+   .search input {
+    width: 600px;
+    padding:10px;
+    border: 0;
+    height: 100%;
+    border-radius: 2px 0 0 2px
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #ddd;
+  }
+  .search button {
+    height: 100%;
+    width: 43px;
+    border: none;
+  }
+   
+  .miic {
+    margin: -4px;
+   
+  }
+  .material-icons {
+    font-size: 32px;
+    color: rgb(100, 100, 100);
+    padding: 4px 1.3vw 4px 0px;
+    cursor: pointer;
+  }
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 66px;;
+  }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 9px 19px;
+  }
+  
+ .nav-link span {
+    margin-left: 4px;
+  }
+  
+ .nav-link:hover {
+    background: #e5e5e5;
+    cursor: pointer;
+  }
+ 
+ .active {
+    background: #e5e5e5;
+ }
+ hr {
+    height: 1px;
+    background-color: #e5e5e5;
+    border: none;
+  }
+  .right{
+    margin-right: 3vw;
+  }
+  .contentt {
+    margin-left: 220px;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 7px;
+    border-top: 1px solid #ddd;
+    overflow: visible;
+    margin-top: 107px;
+  }
+  .content {
+    
+    margin-top: 107px;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 7px;
+    border-top: 1px solid #ddd;
+    overflow: visible;
+  }
+  .contentlast, .contentthird {
+    
+    margin-top: 107px;
+    background-color: #f9f9f9;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0px;
+    border-top: 1px solid #ddd;
+    overflow: visible;
+  }
+  
+  .videos {
+    display: flex;
+  } 
+  .videos1 {
+    display: flex;
+  } 
+  .thumbnail {
+    width: 20vw;
+    height: 180px;
+  }
+  
+  .thumbnail iframe {
+    object-fit: cover;
+    height: 94%;
+    width: 100%;
+  }
+  .author img {
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+  }
+  .miic{
+    margin: 3px;
+  }
+  .details {
+    display: flex;
+    margin-bottom: 22px;
+  }
+   
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+   button:hover{
+     background: white;
+     
+   }
+  .title h3 {
+    color: rgb(3, 3, 3);
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+   
+  .title a,
+  span {
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 17px;
+  }
+  @media (max-width: 1324px){
+    .contentlast{
+      display: none;
+    }
+      .thumbnail {
+        width: 26vw;
+        height: 180px;
+    }
+    .side-bar {
+      width: 220px;
+      height: 100%;
+      background-color: white;
+      overflow: hidden;
+  }
+  }
+@media (max-width: 1150px) {
+    .search input {
+      width: 27vw;
+    }
+    .contentt {
+      margin-left: 220px;
+    }
+  }
+  @media (max-width: 1040px) {
+    .side-bar {
+      width: 66px;
+      height: 100%;
+      background-color: white;
+      overflow: hidden;
+  }
+  .thumbnail {
+    width: 28.5vw;
+    height: 180px;
+}
+  .BUT{
+    margin-left: 5vw;
+  }
+  .contentt {
+    margin-left: 68px;
+  }
+}
+/* @media screen and (max-width: 672px) {
+  
+} */
+@media screen and (min-device-width: 468px)
+ and (max-device-width: 2360px)
+  { 
+ .video1{
+   display: none;
+ }
+}
+@media (max-width: 672px) {
+  .contentthird{
+    display: none;
+  }
+
+
+
+
+
+    .thumbnail {
+      width: 46.6vw;
+      height: 180px;
+  }
+  .side-bar {
+    display: none;
+  }
+  .BUT{
+    margin: 0 20;
+    /* margin-left: 0vw; */
+  }
+  .headeer{
+    margin-left: 0vw;
+ }
+ .contentt{
+   margin-left: 0px;
+ }
+ .menu, .app, .cam {
+       display: none;
+}
+}
+@media (max-width: 468px){
+  .content{
+    display: none;
+  }
+  
+ h2{
+   font-size: 22px;
+ } 
+ .search form {
+   display: flex;
+   border: 1px solid #ddd;
+   margin-top: 7px;
+  }
+   .thumbnail {
+   height: 45px;
+  width: 95vw;
+  height: 166px;
+}
+.miic {
+  display: none;
+ }
+}
+@media (max-width: 402px){
+  input{
+    display: none;
+}
+.search form {
+  
+  border: 0px solid #ddd;
+  
+ }
+}
+@media (max-width: 370px) {
+    
+  button{
+    margin: 0px 8.5vw 0px 0px;
+  }
+    
+  
+}
+  @media (max-width: 346px) {
+    
+    
+    .miic {
+     display: none;
+    }
+    .headeer{
+         margin-left: 0px;
+      }
+  }
+ 
+    @media (max-width: 544px) {
+     
+     
+     .menu, .app, .cam{
+       display: none;
+     }
+  }
+  @media (max-width: 289px){
+    input{
+     width: 55px;
+    }
+    
+  }
+ 
+  h2{
+    font-family:bold serif;
+
+  }
